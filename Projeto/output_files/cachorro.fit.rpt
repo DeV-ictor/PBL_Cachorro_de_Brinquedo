@@ -1,5 +1,5 @@
 Fitter report for cachorro
-Wed Nov  6 19:18:22 2024
+Wed Nov  6 19:34:51 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Wed Nov  6 19:18:22 2024          ;
+; Fitter Status         ; Successful - Wed Nov  6 19:34:51 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; cachorro                                       ;
 ; Top-level Entity Name ; sistema                                        ;
@@ -133,14 +133,14 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   1.3%      ;
-;     Processors 3-6         ;   1.2%      ;
+;     Processors 3-6         ;   1.3%      ;
 +----------------------------+-------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.pin.
+The pin-out file can be found in C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.pin.
 
 
 +------------------------------------------------------------------+
@@ -644,16 +644,16 @@ Info (332111): Found 30 clocks
     Info (332111):    1.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q
     Info (332111):    1.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186216): Automatically promoted some destinations of signal "clockdivider:clk_outs_inst|JK_ff:tff26|q" to use Global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/JK_ff.v Line: 4
-    Info (186217): Destination "clockdivider:clk_outs_inst|JK_ff:tff26|q" may be non-global or may not use global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/JK_ff.v Line: 4
-    Info (186217): Destination "mux4x1_clk_selector:comb_5|or_gate~0" may be non-global or may not use global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/mux4x1_clk_selector.v Line: 33
-Info (186215): Automatically promoted signal "contador_3bits:counter_inst|or_rst" to use Global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/contador_3bits.v Line: 13
+Info (186216): Automatically promoted some destinations of signal "clockdivider:clk_outs_inst|JK_ff:tff26|q" to use Global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/JK_ff.v Line: 4
+    Info (186217): Destination "clockdivider:clk_outs_inst|JK_ff:tff26|q" may be non-global or may not use global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/JK_ff.v Line: 4
+    Info (186217): Destination "mux4x1_clk_selector:comb_5|or_gate~0" may be non-global or may not use global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/mux4x1_clk_selector.v Line: 33
+Info (186215): Automatically promoted signal "contador_3bits:counter_inst|or_rst" to use Global clock File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/contador_3bits.v Line: 13
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -669,10 +669,10 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5544 megabytes
-    Info: Processing ended: Wed Nov  6 19:18:22 2024
+    Info: Peak virtual memory: 5542 megabytes
+    Info: Processing ended: Wed Nov  6 19:34:51 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -680,6 +680,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_2_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.fit.smsg.
+The suppressed messages can be found in C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.fit.smsg.
 
 

@@ -1,3 +1,9 @@
+/*
+
+	Debouncer, para atraso da entrada, e contador de 2 bits, responsável pela codificação do dígito da saída e pelas chaves de seleção do multiplexador responsável pela seleção de pulso.
+
+*/
+
 module debouncer (
 	input clk, Button,
 	output A, B

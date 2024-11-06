@@ -1,9 +1,3 @@
-/*
-
-	Decodificador do dígito da ação.
-
-*/
-
 module dec_7seg_act (
     input A, B, C,
     output S_a, S_b, S_c, S_d, S_e, S_f, S_g

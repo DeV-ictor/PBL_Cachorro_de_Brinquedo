@@ -1,3 +1,9 @@
+/*
+
+	Integração dos módulos para implementação do projeto
+
+*/
+
 module sistema (
 	input clk_ini, but_deb,reset_act, on_off,
 	output D1, D2, D3, D4, A, B, C, D, E, F, G, P

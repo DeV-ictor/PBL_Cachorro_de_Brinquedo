@@ -18,7 +18,7 @@ module mux_2x1_digit (
   
   // Portas AND para selecionar a entrada apropriada
   
-  and #(1) and_gate0 (digit1_out, 1'b1, not_sel);
-  and #(1) and_gate1 (digit4_out, 1'b1, sel);
+  and and_gate0 (digit1_out, 1'b1, not_sel);
+  and and_gate1 (digit4_out, 1'b1, sel);
 
 endmodule

@@ -3,8 +3,12 @@ module clockdivider (
 	output clk_out_26, clk_out_27, clk_out_19, clk_out_15, clk_out_28
 );
 
+	// Fios para recebimento e transferência de pulsos
+
 	wire clk1, clk2, clk3, clk4, clk5, clk6, clk7, clk8, clk9, clk10, clk11, clk12, clk13, clk14, clk15, clk16, clk17, clk18, clk19, clk20, clk21, clk22, clk23, clk24, clk25;
 
+	// Instanciação dos módulos do flip flop pára divisão do clock
+	
 	JK_ff tff1 (
 		.clk(clk),
 		.q(clk1),
