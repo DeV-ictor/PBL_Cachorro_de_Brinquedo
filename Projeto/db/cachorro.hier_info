@@ -1,0 +1,463 @@
+|sistema
+clk_ini => comb.IN0
+but_deb => deb_B.IN1
+reset_act => reset_act.IN1
+on_off => comb.IN1
+D1 <= display:display_inst.digit1_out
+D2 <= display:display_inst.digit2_out
+D3 <= display:display_inst.digit3_out
+D4 <= display:display_inst.digit4_out
+A <= display:display_inst.A
+B <= display:display_inst.B
+C <= display:display_inst.C
+D <= display:display_inst.D
+E <= display:display_inst.E
+F <= display:display_inst.F
+G <= display:display_inst.G
+P <= display:display_inst.P
+
+
+|sistema|clockdivider:clk_outs_inst
+clk => clk.IN1
+clk_out_26 <= clk_out_26.DB_MAX_OUTPUT_PORT_TYPE
+clk_out_27 <= clk_out_27.DB_MAX_OUTPUT_PORT_TYPE
+clk_out_19 <= clk_out_19.DB_MAX_OUTPUT_PORT_TYPE
+clk_out_15 <= clk_out_15.DB_MAX_OUTPUT_PORT_TYPE
+clk_out_28 <= JK_ff:tff28.q
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff1
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff2
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff3
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff4
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff5
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff6
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff7
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff8
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff9
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff10
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff11
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff12
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff13
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff14
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff15
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff16
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff17
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff18
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff19
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff20
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff21
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff22
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff23
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff24
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff25
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff26
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff27
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|clockdivider:clk_outs_inst|JK_ff:tff28
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|debouncer:debouncer_inst
+clk => clk.IN2
+Button => Button.IN2
+A <= JK_ff:T_inst_1.q
+B <= JK_ff:T_inst_2.q
+
+
+|sistema|debouncer:debouncer_inst|JK_ff:T_inst_1
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|debouncer:debouncer_inst|JK_ff:T_inst_2
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|mux4x1_clk_selector:comb_5
+sel0 => and_gate1.IN0
+sel0 => and_gate2.IN0
+sel0 => and_gate3.IN0
+sel0 => and_gate4.IN0
+sel1 => and_gate1.IN1
+sel1 => and_gate3.IN1
+sel1 => and_gate2.IN1
+sel1 => and_gate4.IN1
+in0 => and_gate5.IN1
+in1 => and_gate6.IN1
+in2 => and_gate7.IN1
+in3 => and_gate8.IN1
+out <= or_gate.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|contador_3bits:counter_inst
+clk => clk.IN1
+rst_but => or_rst.IN1
+Q0 <= JK_ff:jk_inst_Q0.q
+Q1 <= JK_ff:jk_inst_Q1.q
+Q2 <= JK_ff:jk_inst_Q2.q
+
+
+|sistema|contador_3bits:counter_inst|JK_ff:jk_inst_Q0
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|contador_3bits:counter_inst|JK_ff:jk_inst_Q1
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|contador_3bits:counter_inst|JK_ff:jk_inst_Q2
+clk => q~reg0.CLK
+rst_n => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|display:display_inst
+clk => clk.IN2
+A_spd => A_spd.IN1
+B_spd => B_spd.IN1
+A_act => A_act.IN1
+B_act => B_act.IN1
+C_act => C_act.IN1
+onoff => ~NO_FANOUT~
+A <= mux_2x1_act_spd:mux_act_spd_inst.A
+B <= mux_2x1_act_spd:mux_act_spd_inst.B
+C <= mux_2x1_act_spd:mux_act_spd_inst.C
+D <= mux_2x1_act_spd:mux_act_spd_inst.D
+E <= mux_2x1_act_spd:mux_act_spd_inst.E
+F <= mux_2x1_act_spd:mux_act_spd_inst.F
+G <= mux_2x1_act_spd:mux_act_spd_inst.G
+P <= <VCC>
+digit1_out <= mux_2x1_digit:mux_digit_inst.digit1_out
+digit2_out <= <VCC>
+digit3_out <= <VCC>
+digit4_out <= mux_2x1_digit:mux_digit_inst.digit4_out
+
+
+|sistema|display:display_inst|mux_2x1_act_spd:mux_act_spd_inst
+sel => and_gate7.IN1
+sel => and_gate8.IN1
+sel => and_gate9.IN1
+sel => and_gate10.IN1
+sel => and_gate11.IN1
+sel => and_gate12.IN1
+sel => and_gate13.IN1
+sel => and_gate0.IN1
+sel => and_gate1.IN1
+sel => and_gate2.IN1
+sel => and_gate3.IN1
+sel => and_gate4.IN1
+sel => and_gate5.IN1
+sel => and_gate6.IN1
+A_x => A_x.IN1
+B_x => B_x.IN1
+C_x => C_x.IN1
+A_z => A_z.IN1
+B_z => B_z.IN1
+A <= or_gate0.DB_MAX_OUTPUT_PORT_TYPE
+B <= or_gate1.DB_MAX_OUTPUT_PORT_TYPE
+C <= or_gate2.DB_MAX_OUTPUT_PORT_TYPE
+D <= or_gate3.DB_MAX_OUTPUT_PORT_TYPE
+E <= or_gate4.DB_MAX_OUTPUT_PORT_TYPE
+F <= or_gate5.DB_MAX_OUTPUT_PORT_TYPE
+G <= or_gate6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|display:display_inst|mux_2x1_act_spd:mux_act_spd_inst|dec_7seg_act:dis_act_inst
+A => SEG_b.IN0
+A => SEG_d.IN0
+A => SEG_f.IN0
+A => WideAnd0.IN0
+B => SEG_b.IN1
+B => and0.IN0
+B => SEG_g.IN0
+B => SEG_a.IN0
+B => WideAnd0.IN1
+B => S_c.DATAIN
+C => SEG_b.IN2
+C => and0.IN1
+C => SEG_f.IN1
+C => SEG_g.IN1
+C => SEG_a.IN1
+C => SEG_d.IN1
+C => WideAnd0.IN2
+S_a <= SEG_a.DB_MAX_OUTPUT_PORT_TYPE
+S_b <= SEG_b.DB_MAX_OUTPUT_PORT_TYPE
+S_c <= B.DB_MAX_OUTPUT_PORT_TYPE
+S_d <= SEG_d.DB_MAX_OUTPUT_PORT_TYPE
+S_e <= SEG_e.DB_MAX_OUTPUT_PORT_TYPE
+S_f <= SEG_f.DB_MAX_OUTPUT_PORT_TYPE
+S_g <= SEG_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|display:display_inst|mux_2x1_act_spd:mux_act_spd_inst|dec_7seg_spd:dis_spd_inst
+A => and_a.IN0
+A => and_d.IN0
+A => and_e.IN0
+A => and_c.IN0
+A => and_f.IN0
+A => and_g.IN0
+B => and_c.IN1
+B => and_f.IN1
+B => and_a.IN1
+B => and_d.IN1
+B => and_e.IN1
+B => and_g.IN1
+S_a <= and_a.DB_MAX_OUTPUT_PORT_TYPE
+S_b <= <GND>
+S_c <= and_c.DB_MAX_OUTPUT_PORT_TYPE
+S_d <= and_d.DB_MAX_OUTPUT_PORT_TYPE
+S_e <= and_e.DB_MAX_OUTPUT_PORT_TYPE
+S_f <= and_f.DB_MAX_OUTPUT_PORT_TYPE
+S_g <= and_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema|display:display_inst|mux_2x1_digit:mux_digit_inst
+sel => digit1_out.DATAIN
+sel => digit4_out.DATAIN
+digit1_out <= sel.DB_MAX_OUTPUT_PORT_TYPE
+digit4_out <= sel.DB_MAX_OUTPUT_PORT_TYPE
+
+

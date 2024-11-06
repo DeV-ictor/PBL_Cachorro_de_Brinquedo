@@ -1,0 +1,33 @@
+module clockdivider (
+	input	clk,
+	output clk_out
+);
+
+	wire clk1, clk2, clk3, clk4, clk5;
+
+	t_ff tff1 (
+		.clk(clk),
+		.q(clk1)
+	);
+	
+	t_ff tff2 (
+		.clk(clk1),
+		.q(clk2)
+	);
+	
+	t_ff tff3 (
+		.clk(clk2),
+		.q(clk3)
+	);
+	
+	t_ff tff4 (
+		.clk(clk3),
+		.q(clk4)
+	);
+	
+	t_ff tff5 (
+		.clk(clk4),
+		.q(clk5)
+	);
+
+endmodule

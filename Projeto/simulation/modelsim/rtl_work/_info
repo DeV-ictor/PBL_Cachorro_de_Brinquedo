@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/simulation/modelsim
+vclockdivider
+Z1 !s110 1730910682
+!i10b 1
+!s100 2]i_CRGVPU@:Ze>:fEkAE0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYV]6NF7Y@k_hF<bPWjYGj2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1730890493
+8/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/clockdivider.v
+F/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/clockdivider.v
+!i122 0
+L0 1 224
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1730910682.000000
+!s107 /home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/clockdivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto|/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/clockdivider.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto}
+Z9 tCvgOpt 0
+vcontador_3bits
+R1
+!i10b 1
+!s100 j013H:]=g1PGSY@S:fMI?1
+R2
+I5<I_]`ClQU>eYiXO3S<=K2
+R3
+R0
+w1730910621
+8/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/contador_3bits.v
+F/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/contador_3bits.v
+!i122 2
+L0 1 39
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/contador_3bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto|/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/contador_3bits.v|
+!i113 1
+R7
+R8
+R9
+vJK_ff
+R1
+!i10b 1
+!s100 k@bl9GifVm29eXTBbnDG02
+R2
+ImVVCjgidJOd<89YzXD[;f0
+R3
+R0
+R4
+8/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/JK_ff.v
+F/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/JK_ff.v
+!i122 1
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/JK_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto|/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/JK_ff.v|
+!i113 1
+R7
+R8
+R9
+n@j@k_ff
+vTeste
+R1
+!i10b 1
+!s100 aHzKZhfiFY;^dg7diLS]l2
+R2
+I:@8cRoTISSUbMjIZh7E5O3
+R3
+R0
+R4
+8/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/Teste.v
+F/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/Teste.v
+!i122 3
+L0 1 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/Teste.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto|/home/aluno/Documentos/CIRCUITOS DIGITAIS/21/PBL---Cachorro-de-Brinquedo-main/Projeto/Teste.v|
+!i113 1
+R7
+R8
+R9
+n@teste

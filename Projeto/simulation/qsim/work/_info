@@ -1,0 +1,92 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+R1
+R0
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim
+T_opt
+Z3 !s12d 2322000
+!s110 1730869924
+VNkaMOIbfb8[XDJ_n]27`=0
+Z4 04 26 4 work contador_3bits_vlg_vec_tst fast 0
+=1-706979a0bdb8-672afaa4-17f-3610
+!s9c 1
+R0
+Z5 !s12b OEM100
+Z6 !s124 OEM10U2 
+Z7 o-quiet -auto_acc_if_foreign -work work -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2023.3;77
+R2
+T_opt1
+R3
+!s110 1730870089
+V6JNY?a<d92=2Kkk=I`T@O0
+R4
+=1-706979a0bdb8-672afb49-84-584
+!s9c 1
+R0
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+vcontador_3bits
+2cachorro.vo
+Z10 !s110 1730870088
+!i10b 1
+!s100 o]?FnS:9OOSD;kfb:dcZQ1
+Ikfgn5a;RAT;PPk5GUl1`_2
+R2
+Z11 w1730870087
+8cachorro.vo
+Fcachorro.vo
+!i122 4
+L0 32 232
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z14 !s108 1730870088.000000
+!s107 cachorro.vo|
+!s90 -work|work|cachorro.vo|
+!i113 0
+Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vcontador_3bits_vlg_vec_tst
+2Waveform.vwf.vt
+R10
+!i10b 1
+!s100 D9?Zk@c>N5_8:]BkiRZ`U3
+I?VzdEQ7lmY^kBIcmA4mI;1
+R2
+R11
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 5
+L0 30 40
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R15
+R8

@@ -1,0 +1,5 @@
+module debouncer (
+	input buttom, clk
+	output S0, S1
+);
+

@@ -1,0 +1,28 @@
+module contador_3bits (
+    input clk,        // Clock
+    input reset,      // Reset
+    output Q0,        // Saída do bit menos significativo
+    output Q1,        // Saída do bit do meio
+    output Q2         // Saída do bit mais significativo
+);
+
+    // Instâncias dos flip-flops T para cada bit
+    t_flip_flop ff0 (
+        .clk(clk),
+        .reset(reset),
+        .q(Q0)
+    );
+
+    t_flip_flop ff1 (
+        .clk(Q0),       // O segundo flip-flop alterna quando o primeiro muda de estado
+        .reset(reset),
+        .q(Q1)
+    );
+
+    t_flip_flop ff2 (
+        .clk(Q1),       // O terceiro flip-flop alterna quando o segundo muda de estado
+        .reset(reset),
+        .q(Q2)
+    );
+
+endmodule

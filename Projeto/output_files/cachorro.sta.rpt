@@ -1,0 +1,1441 @@
+Timing Analyzer report for cachorro
+Wed Nov  6 19:18:25 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
+ 12. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
+ 13. Setup: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
+ 14. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff25|q'
+ 15. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
+ 16. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
+ 17. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
+ 18. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
+ 19. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
+ 20. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
+ 21. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
+ 22. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+ 23. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
+ 24. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
+ 25. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
+ 26. Setup: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
+ 27. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff3|q'
+ 28. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
+ 29. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff2|q'
+ 30. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff24|q'
+ 31. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
+ 32. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+ 33. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
+ 34. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
+ 35. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
+ 36. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
+ 37. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff20|q'
+ 38. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
+ 39. Setup: 'clockdivider:clk_outs_inst|JK_ff:tff5|q'
+ 40. Setup: 'clk_ini'
+ 41. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
+ 42. Hold: 'clk_ini'
+ 43. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
+ 44. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff5|q'
+ 45. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
+ 46. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff20|q'
+ 47. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
+ 48. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
+ 49. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+ 50. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
+ 51. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
+ 52. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff24|q'
+ 53. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
+ 54. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
+ 55. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff2|q'
+ 56. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff3|q'
+ 57. Hold: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
+ 58. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
+ 59. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
+ 60. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+ 61. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
+ 62. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
+ 63. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
+ 64. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
+ 65. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
+ 66. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
+ 67. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
+ 68. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
+ 69. Hold: 'clockdivider:clk_outs_inst|JK_ff:tff25|q'
+ 70. Hold: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
+ 71. Recovery: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
+ 72. Recovery: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
+ 73. Recovery: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
+ 74. Recovery: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
+ 75. Removal: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
+ 76. Removal: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
+ 77. Removal: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
+ 78. Removal: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
+ 79. Setup Transfers
+ 80. Hold Transfers
+ 81. Recovery Transfers
+ 82. Removal Transfers
+ 83. Report TCCS
+ 84. Report RSKM
+ 85. Unconstrained Paths Summary
+ 86. Clock Status Summary
+ 87. Unconstrained Input Ports
+ 88. Unconstrained Output Ports
+ 89. Unconstrained Input Ports
+ 90. Unconstrained Output Ports
+ 91. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; cachorro                                               ;
+; Device Family         ; MAX II                                                 ;
+; Device Name           ; EPM240T100C5                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Slow Model                                             ;
+; Rise/Fall Delays      ; Unavailable                                            ;
++-----------------------+--------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                         ;
++------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------------+
+; Clock Name                                     ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                            ;
++------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------------+
+; clk_ini                                        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_ini }                                        ;
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff1|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff2|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff3|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff4|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff5|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff6|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff7|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff8|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff9|q }        ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff10|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff11|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff12|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff13|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff14|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff15|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff16|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff17|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff18|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff19|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff20|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff21|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff22|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff23|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff24|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff25|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff26|q }       ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockdivider:clk_outs_inst|JK_ff:tff27|q }       ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q } ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q } ;
++------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Fmax Summary                                                                         ;
++------------+-----------------+------------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                     ; Note ;
++------------+-----------------+------------------------------------------------+------+
+; 377.79 MHz ; 377.79 MHz      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ;      ;
+; 448.23 MHz ; 448.23 MHz      ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ;      ;
+; 451.67 MHz ; 451.67 MHz      ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ;      ;
++------------+-----------------+------------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------------------------------------+
+; Setup Summary                                                           ;
++------------------------------------------------+--------+---------------+
+; Clock                                          ; Slack  ; End Point TNS ;
++------------------------------------------------+--------+---------------+
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; -1.647 ; -3.211        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; -1.231 ; -1.231        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; -1.214 ; -1.214        ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; 0.209  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; 0.458  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; 0.466  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; 0.466  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; 0.466  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; 0.466  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; 0.467  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; 0.467  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; 0.467  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; 0.467  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; 0.467  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; 0.467  ; 0.000         ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.556  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; 0.808  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; 0.818  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; 0.818  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; 0.819  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; 0.819  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; 0.825  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; 0.825  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; 0.825  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; 0.903  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; 1.117  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; 1.247  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; 1.400  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; 1.667  ; 0.000         ;
+; clk_ini                                        ; 3.359  ; 0.000         ;
++------------------------------------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Summary                                                            ;
++------------------------------------------------+--------+---------------+
+; Clock                                          ; Slack  ; End Point TNS ;
++------------------------------------------------+--------+---------------+
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; -4.036 ; -6.050        ;
+; clk_ini                                        ; -3.413 ; -3.413        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; -2.362 ; -2.362        ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; -1.721 ; -1.721        ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; -1.454 ; -1.454        ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; -1.301 ; -1.301        ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; -1.171 ; -1.171        ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; -0.957 ; -0.957        ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; -0.879 ; -0.879        ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; -0.879 ; -0.879        ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; -0.879 ; -0.879        ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; -0.873 ; -0.873        ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; -0.873 ; -0.873        ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; -0.872 ; -0.872        ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; -0.872 ; -0.872        ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; -0.862 ; -0.862        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; -0.610 ; -0.610        ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; -0.521 ; -0.521        ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; -0.520 ; -0.520        ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; -0.520 ; -0.520        ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; -0.520 ; -0.520        ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; -0.520 ; -0.520        ;
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; -0.512 ; -0.512        ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; -0.263 ; -0.263        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 1.660  ; 0.000         ;
++------------------------------------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------+
+; Recovery Summary                                                        ;
++------------------------------------------------+--------+---------------+
+; Clock                                          ; Slack  ; End Point TNS ;
++------------------------------------------------+--------+---------------+
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; -4.763 ; -4.763        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; -4.400 ; -4.400        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; -3.922 ; -3.922        ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; -2.248 ; -2.248        ;
++------------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------+
+; Removal Summary                                                        ;
++------------------------------------------------+-------+---------------+
+; Clock                                          ; Slack ; End Point TNS ;
++------------------------------------------------+-------+---------------+
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 0.382 ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 2.056 ; 0.000         ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 3.034 ; 0.000         ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 3.397 ; 0.000         ;
++------------------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                             ;
++------------------------------------------------+--------+---------------+
+; Clock                                          ; Slack  ; End Point TNS ;
++------------------------------------------------+--------+---------------+
+; clk_ini                                        ; -2.289 ; -2.289        ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; 0.234  ; 0.000         ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; 0.234  ; 0.000         ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.234  ; 0.000         ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0.234  ; 0.000         ;
++------------------------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'                                                                                                                                                                                             ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -1.647 ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 0.000      ; 2.314      ;
+; -1.564 ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 0.000      ; 2.231      ;
+; -1.498 ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 0.000      ; 2.165      ;
+; 1.960  ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.500        ; 4.380      ; 2.963      ;
+; 2.460  ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 4.380      ; 2.963      ;
+; 3.982  ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.500        ; 5.399      ; 1.960      ;
+; 4.482  ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 5.399      ; 1.960      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'                                                                                                                                                                                             ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -1.231 ; clockdivider:clk_outs_inst|JK_ff:tff28|q       ; clockdivider:clk_outs_inst|JK_ff:tff28|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 1.000        ; 0.000      ; 1.898      ;
+; 2.308  ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.500        ; 3.725      ; 1.960      ;
+; 2.808  ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 1.000        ; 3.725      ; 1.960      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'                                                                                                                                                                                             ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; -1.214 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 1.000        ; 0.000      ; 1.881      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff25|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.209 ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; 0.500        ; 1.785      ; 2.119      ;
+; 0.709 ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; 1.000        ; 1.785      ; 2.119      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff1|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.458 ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; 0.500        ; 1.795      ; 1.880      ;
+; 0.958 ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; 1.000        ; 1.795      ; 1.880      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff12|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.466 ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; 1.000        ; 1.784      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff14|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.466 ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; 1.000        ; 1.784      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff21|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.466 ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; 1.000        ; 1.784      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff6|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.466 ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; 1.000        ; 1.784      ; 1.861      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff10|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff16|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff18|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff23|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff4|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; 0.500        ; 1.784      ; 1.860      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; 1.000        ; 1.784      ; 1.860      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff8|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.467 ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; 1.000        ; 1.785      ; 1.861      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'                                                                                                                                                                                            ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; 0.556 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.500        ; 2.170      ; 2.157      ;
+; 1.056 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 1.000        ; 2.170      ; 2.157      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff3|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.808 ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; 0.500        ; 2.144      ; 1.879      ;
+; 1.308 ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; 1.000        ; 2.144      ; 1.879      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff17|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.818 ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; 0.500        ; 2.154      ; 1.879      ;
+; 1.318 ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; 1.000        ; 2.154      ; 1.879      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff2|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.818 ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; 0.500        ; 2.136      ; 1.861      ;
+; 1.318 ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; 1.000        ; 2.136      ; 1.861      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff24|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.819 ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; 1.000        ; 2.154      ; 1.878      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff9|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.819 ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; 1.000        ; 2.154      ; 1.878      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff15|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.825 ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; 1.000        ; 2.160      ; 1.878      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff22|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.825 ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; 1.000        ; 2.160      ; 1.878      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff7|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 0.825 ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; 1.000        ; 2.160      ; 1.878      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff19|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.903 ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; 0.500        ; 2.221      ; 1.861      ;
+; 1.403 ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; 1.000        ; 2.221      ; 1.861      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff11|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 1.117 ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; 0.500        ; 2.712      ; 2.138      ;
+; 1.617 ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; 1.000        ; 2.712      ; 2.138      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff20|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 1.247 ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; 0.500        ; 2.842      ; 2.138      ;
+; 1.747 ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; 1.000        ; 2.842      ; 2.138      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff13|q'                                                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 1.400 ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; 0.500        ; 2.995      ; 2.138      ;
+; 1.900 ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; 1.000        ; 2.995      ; 2.138      ;
++-------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clockdivider:clk_outs_inst|JK_ff:tff5|q'                                                                                                                                                                       ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 1.667 ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; 0.500        ; 3.262      ; 2.138      ;
+; 2.167 ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; 1.000        ; 3.262      ; 2.138      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk_ini'                                                                                                                                                                           ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; 3.359 ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clk_ini     ; 0.500        ; 4.702      ; 1.886      ;
+; 3.859 ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clk_ini     ; 1.000        ; 4.702      ; 1.886      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'                                                                                                                                                                                              ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -4.036 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 5.399      ; 1.960      ;
+; -3.536 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; -0.500       ; 5.399      ; 1.960      ;
+; -2.014 ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 4.380      ; 2.963      ;
+; -1.514 ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; -0.500       ; 4.380      ; 2.963      ;
+; 1.944  ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 0.000      ; 2.165      ;
+; 2.010  ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; debouncer:debouncer_inst|JK_ff:T_inst_1|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 0.000      ; 2.231      ;
+; 2.093  ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; debouncer:debouncer_inst|JK_ff:T_inst_2|q      ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 0.000      ; 2.314      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk_ini'                                                                                                                                                                             ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; -3.413 ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clk_ini     ; 0.000        ; 4.702      ; 1.886      ;
+; -2.913 ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; clk_ini     ; -0.500       ; 4.702      ; 1.886      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'                                                                                                                                                                                              ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -2.362 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.000        ; 3.725      ; 1.960      ;
+; -1.862 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; -0.500       ; 3.725      ; 1.960      ;
+; 1.677  ; clockdivider:clk_outs_inst|JK_ff:tff28|q       ; clockdivider:clk_outs_inst|JK_ff:tff28|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.000        ; 0.000      ; 1.898      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff5|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -1.721 ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; 0.000        ; 3.262      ; 2.138      ;
+; -1.221 ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; -0.500       ; 3.262      ; 2.138      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff13|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -1.454 ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; 0.000        ; 2.995      ; 2.138      ;
+; -0.954 ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; -0.500       ; 2.995      ; 2.138      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff20|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -1.301 ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; 0.000        ; 2.842      ; 2.138      ;
+; -0.801 ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; -0.500       ; 2.842      ; 2.138      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff11|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -1.171 ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; 0.000        ; 2.712      ; 2.138      ;
+; -0.671 ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; -0.500       ; 2.712      ; 2.138      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff19|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.957 ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; 0.000        ; 2.221      ; 1.861      ;
+; -0.457 ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff20|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; -0.500       ; 2.221      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff15|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.879 ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; -0.500       ; 2.160      ; 1.878      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff22|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.879 ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; -0.500       ; 2.160      ; 1.878      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff7|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.879 ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; -0.500       ; 2.160      ; 1.878      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff24|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.873 ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; -0.500       ; 2.154      ; 1.878      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff9|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.873 ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; -0.500       ; 2.154      ; 1.878      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff17|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.872 ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; 0.000        ; 2.154      ; 1.879      ;
+; -0.372 ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; -0.500       ; 2.154      ; 1.879      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff2|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.872 ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; 0.000        ; 2.136      ; 1.861      ;
+; -0.372 ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; -0.500       ; 2.136      ; 1.861      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff3|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.862 ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; 0.000        ; 2.144      ; 1.879      ;
+; -0.362 ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; clockdivider:clk_outs_inst|JK_ff:tff3|q ; -0.500       ; 2.144      ; 1.879      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'                                                                                                                                                                                              ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; -0.610 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.000        ; 2.170      ; 2.157      ;
+; -0.110 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; -0.500       ; 2.170      ; 2.157      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff10|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff11|q ; clockdivider:clk_outs_inst|JK_ff:tff10|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff16|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff17|q ; clockdivider:clk_outs_inst|JK_ff:tff16|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff18|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff19|q ; clockdivider:clk_outs_inst|JK_ff:tff18|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff23|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff24|q ; clockdivider:clk_outs_inst|JK_ff:tff23|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff4|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; 0.000        ; 1.784      ; 1.860      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff5|q ; clockdivider:clk_outs_inst|JK_ff:tff4|q ; -0.500       ; 1.784      ; 1.860      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff8|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.521 ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff9|q ; clockdivider:clk_outs_inst|JK_ff:tff8|q ; -0.500       ; 1.785      ; 1.861      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff12|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.520 ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff13|q ; clockdivider:clk_outs_inst|JK_ff:tff12|q ; -0.500       ; 1.784      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff14|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.520 ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff15|q ; clockdivider:clk_outs_inst|JK_ff:tff14|q ; -0.500       ; 1.784      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff21|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.520 ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff22|q ; clockdivider:clk_outs_inst|JK_ff:tff21|q ; -0.500       ; 1.784      ; 1.861      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff6|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.520 ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff7|q ; clockdivider:clk_outs_inst|JK_ff:tff6|q ; -0.500       ; 1.784      ; 1.861      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff1|q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.512 ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; 0.000        ; 1.795      ; 1.880      ;
+; -0.012 ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff2|q ; clockdivider:clk_outs_inst|JK_ff:tff1|q ; -0.500       ; 1.795      ; 1.880      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clockdivider:clk_outs_inst|JK_ff:tff25|q'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -0.263 ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; 0.000        ; 1.785      ; 2.119      ;
+; 0.237  ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; clockdivider:clk_outs_inst|JK_ff:tff25|q ; -0.500       ; 1.785      ; 2.119      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'                                                                                                                                                                                             ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; 1.660 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0.000        ; 0.000      ; 1.881      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'                                                                                                                                                                                          ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; -4.763 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 1.000        ; 0.000      ; 5.430      ;
+; -3.451 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0.500        ; 1.807      ; 5.801      ;
+; -2.951 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 1.000        ; 1.807      ; 5.801      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'                                                                                                                                                                                          ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; -4.400 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 1.000        ; 0.363      ; 5.430      ;
+; -3.088 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.500        ; 2.170      ; 5.801      ;
+; -2.588 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 1.000        ; 2.170      ; 5.801      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'                                                                                                                                                                                          ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -3.922 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.500        ; 1.918      ; 6.007      ;
+; -2.110 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.500        ; 3.725      ; 6.378      ;
+; -1.610 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 1.000        ; 3.725      ; 6.378      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'                                                                                                                                                                                          ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -2.248 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.500        ; 3.592      ; 6.007      ;
+; -0.436 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.500        ; 5.399      ; 6.378      ;
+; 0.064  ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 1.000        ; 5.399      ; 6.378      ;
++--------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'clockdivider:clk_outs_inst|JK_ff:tff26|q'                                                                                                                                                                                          ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 0.382 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; 0.000        ; 5.399      ; 6.378      ;
+; 0.882 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; -0.500       ; 5.399      ; 6.378      ;
+; 2.694 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q ; -0.500       ; 3.592      ; 6.007      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'clockdivider:clk_outs_inst|JK_ff:tff27|q'                                                                                                                                                                                          ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+; 2.056 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; 0.000        ; 3.725      ; 6.378      ;
+; 2.556 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; -0.500       ; 3.725      ; 6.378      ;
+; 4.368 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q ; -0.500       ; 1.918      ; 6.007      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'                                                                                                                                                                                          ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; 3.034 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.000        ; 2.170      ; 5.801      ;
+; 3.534 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; -0.500       ; 2.170      ; 5.801      ;
+; 4.846 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0.000        ; 0.363      ; 5.430      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'                                                                                                                                                                                          ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                      ; To Node                                        ; Launch Clock                                   ; Latch Clock                                    ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+; 3.397 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0.000        ; 1.807      ; 5.801      ;
+; 3.897 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; -0.500       ; 1.807      ; 5.801      ;
+; 5.209 ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q2|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0.000        ; 0.000      ; 5.430      ;
++-------+------------------------------------------------+------------------------------------------------+------------------------------------------------+------------------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                             ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                     ; To Clock                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; clk_ini                                        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 3        ; 0        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 1        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 0        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 1        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0        ; 0        ; 1        ; 1        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0        ; 0        ; 0        ; 1        ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                              ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                     ; To Clock                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; clk_ini                                        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 3        ; 0        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 1        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 1        ; 0        ; 0        ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 0        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 1        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0        ; 0        ; 1        ; 1        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0        ; 0        ; 0        ; 1        ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                                          ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                     ; To Clock                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 2        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 2        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0        ; 0        ; 1        ; 2        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0        ; 0        ; 1        ; 2        ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                                           ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                     ; To Clock                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; 1        ; 2        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; 1        ; 2        ; 0        ; 0        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; 0        ; 0        ; 1        ; 2        ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; 0        ; 0        ; 1        ; 2        ;
++------------------------------------------------+------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 5     ; 5    ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 36    ; 36   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                 ;
++------------------------------------------------+------------------------------------------------+------+-------------+
+; Target                                         ; Clock                                          ; Type ; Status      ;
++------------------------------------------------+------------------------------------------------+------+-------------+
+; clk_ini                                        ; clk_ini                                        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; clockdivider:clk_outs_inst|JK_ff:tff1|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; clockdivider:clk_outs_inst|JK_ff:tff2|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; clockdivider:clk_outs_inst|JK_ff:tff3|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; clockdivider:clk_outs_inst|JK_ff:tff4|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; clockdivider:clk_outs_inst|JK_ff:tff5|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; clockdivider:clk_outs_inst|JK_ff:tff6|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; clockdivider:clk_outs_inst|JK_ff:tff7|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; clockdivider:clk_outs_inst|JK_ff:tff8|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; clockdivider:clk_outs_inst|JK_ff:tff9|q        ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; clockdivider:clk_outs_inst|JK_ff:tff10|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; clockdivider:clk_outs_inst|JK_ff:tff11|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; clockdivider:clk_outs_inst|JK_ff:tff12|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; clockdivider:clk_outs_inst|JK_ff:tff13|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; clockdivider:clk_outs_inst|JK_ff:tff14|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; clockdivider:clk_outs_inst|JK_ff:tff15|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; clockdivider:clk_outs_inst|JK_ff:tff16|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; clockdivider:clk_outs_inst|JK_ff:tff17|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; clockdivider:clk_outs_inst|JK_ff:tff18|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; clockdivider:clk_outs_inst|JK_ff:tff19|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; clockdivider:clk_outs_inst|JK_ff:tff20|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; clockdivider:clk_outs_inst|JK_ff:tff21|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; clockdivider:clk_outs_inst|JK_ff:tff22|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; clockdivider:clk_outs_inst|JK_ff:tff23|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; clockdivider:clk_outs_inst|JK_ff:tff24|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; clockdivider:clk_outs_inst|JK_ff:tff25|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; clockdivider:clk_outs_inst|JK_ff:tff26|q       ; Base ; Constrained ;
+; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; clockdivider:clk_outs_inst|JK_ff:tff27|q       ; Base ; Constrained ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q ; Base ; Constrained ;
+; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q ; Base ; Constrained ;
++------------------------------------------------+------------------------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; but_deb    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset_act  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; A           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; but_deb    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset_act  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; A           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Wed Nov  6 19:18:24 2024
+Info: Command: quartus_sta cachorro -c cachorro
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'cachorro.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff18|q clockdivider:clk_outs_inst|JK_ff:tff18|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff17|q clockdivider:clk_outs_inst|JK_ff:tff17|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff26|q clockdivider:clk_outs_inst|JK_ff:tff26|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff25|q clockdivider:clk_outs_inst|JK_ff:tff25|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff24|q clockdivider:clk_outs_inst|JK_ff:tff24|q
+    Info (332105): create_clock -period 1.000 -name contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q
+    Info (332105): create_clock -period 1.000 -name contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff16|q clockdivider:clk_outs_inst|JK_ff:tff16|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff15|q clockdivider:clk_outs_inst|JK_ff:tff15|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff23|q clockdivider:clk_outs_inst|JK_ff:tff23|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff27|q clockdivider:clk_outs_inst|JK_ff:tff27|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff14|q clockdivider:clk_outs_inst|JK_ff:tff14|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff22|q clockdivider:clk_outs_inst|JK_ff:tff22|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff13|q clockdivider:clk_outs_inst|JK_ff:tff13|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff21|q clockdivider:clk_outs_inst|JK_ff:tff21|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff12|q clockdivider:clk_outs_inst|JK_ff:tff12|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff20|q clockdivider:clk_outs_inst|JK_ff:tff20|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff11|q clockdivider:clk_outs_inst|JK_ff:tff11|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff19|q clockdivider:clk_outs_inst|JK_ff:tff19|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff10|q clockdivider:clk_outs_inst|JK_ff:tff10|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff9|q clockdivider:clk_outs_inst|JK_ff:tff9|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff8|q clockdivider:clk_outs_inst|JK_ff:tff8|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff7|q clockdivider:clk_outs_inst|JK_ff:tff7|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff6|q clockdivider:clk_outs_inst|JK_ff:tff6|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff5|q clockdivider:clk_outs_inst|JK_ff:tff5|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff4|q clockdivider:clk_outs_inst|JK_ff:tff4|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff3|q clockdivider:clk_outs_inst|JK_ff:tff3|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff2|q clockdivider:clk_outs_inst|JK_ff:tff2|q
+    Info (332105): create_clock -period 1.000 -name clockdivider:clk_outs_inst|JK_ff:tff1|q clockdivider:clk_outs_inst|JK_ff:tff1|q
+    Info (332105): create_clock -period 1.000 -name clk_ini clk_ini
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.647
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.647              -3.211 clockdivider:clk_outs_inst|JK_ff:tff26|q 
+    Info (332119):    -1.231              -1.231 clockdivider:clk_outs_inst|JK_ff:tff27|q 
+    Info (332119):    -1.214              -1.214 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q 
+    Info (332119):     0.209               0.000 clockdivider:clk_outs_inst|JK_ff:tff25|q 
+    Info (332119):     0.458               0.000 clockdivider:clk_outs_inst|JK_ff:tff1|q 
+    Info (332119):     0.466               0.000 clockdivider:clk_outs_inst|JK_ff:tff12|q 
+    Info (332119):     0.466               0.000 clockdivider:clk_outs_inst|JK_ff:tff14|q 
+    Info (332119):     0.466               0.000 clockdivider:clk_outs_inst|JK_ff:tff21|q 
+    Info (332119):     0.466               0.000 clockdivider:clk_outs_inst|JK_ff:tff6|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff10|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff16|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff18|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff23|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff4|q 
+    Info (332119):     0.467               0.000 clockdivider:clk_outs_inst|JK_ff:tff8|q 
+    Info (332119):     0.556               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q 
+    Info (332119):     0.808               0.000 clockdivider:clk_outs_inst|JK_ff:tff3|q 
+    Info (332119):     0.818               0.000 clockdivider:clk_outs_inst|JK_ff:tff17|q 
+    Info (332119):     0.818               0.000 clockdivider:clk_outs_inst|JK_ff:tff2|q 
+    Info (332119):     0.819               0.000 clockdivider:clk_outs_inst|JK_ff:tff24|q 
+    Info (332119):     0.819               0.000 clockdivider:clk_outs_inst|JK_ff:tff9|q 
+    Info (332119):     0.825               0.000 clockdivider:clk_outs_inst|JK_ff:tff15|q 
+    Info (332119):     0.825               0.000 clockdivider:clk_outs_inst|JK_ff:tff22|q 
+    Info (332119):     0.825               0.000 clockdivider:clk_outs_inst|JK_ff:tff7|q 
+    Info (332119):     0.903               0.000 clockdivider:clk_outs_inst|JK_ff:tff19|q 
+    Info (332119):     1.117               0.000 clockdivider:clk_outs_inst|JK_ff:tff11|q 
+    Info (332119):     1.247               0.000 clockdivider:clk_outs_inst|JK_ff:tff20|q 
+    Info (332119):     1.400               0.000 clockdivider:clk_outs_inst|JK_ff:tff13|q 
+    Info (332119):     1.667               0.000 clockdivider:clk_outs_inst|JK_ff:tff5|q 
+    Info (332119):     3.359               0.000 clk_ini 
+Info (332146): Worst-case hold slack is -4.036
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.036              -6.050 clockdivider:clk_outs_inst|JK_ff:tff26|q 
+    Info (332119):    -3.413              -3.413 clk_ini 
+    Info (332119):    -2.362              -2.362 clockdivider:clk_outs_inst|JK_ff:tff27|q 
+    Info (332119):    -1.721              -1.721 clockdivider:clk_outs_inst|JK_ff:tff5|q 
+    Info (332119):    -1.454              -1.454 clockdivider:clk_outs_inst|JK_ff:tff13|q 
+    Info (332119):    -1.301              -1.301 clockdivider:clk_outs_inst|JK_ff:tff20|q 
+    Info (332119):    -1.171              -1.171 clockdivider:clk_outs_inst|JK_ff:tff11|q 
+    Info (332119):    -0.957              -0.957 clockdivider:clk_outs_inst|JK_ff:tff19|q 
+    Info (332119):    -0.879              -0.879 clockdivider:clk_outs_inst|JK_ff:tff15|q 
+    Info (332119):    -0.879              -0.879 clockdivider:clk_outs_inst|JK_ff:tff22|q 
+    Info (332119):    -0.879              -0.879 clockdivider:clk_outs_inst|JK_ff:tff7|q 
+    Info (332119):    -0.873              -0.873 clockdivider:clk_outs_inst|JK_ff:tff24|q 
+    Info (332119):    -0.873              -0.873 clockdivider:clk_outs_inst|JK_ff:tff9|q 
+    Info (332119):    -0.872              -0.872 clockdivider:clk_outs_inst|JK_ff:tff17|q 
+    Info (332119):    -0.872              -0.872 clockdivider:clk_outs_inst|JK_ff:tff2|q 
+    Info (332119):    -0.862              -0.862 clockdivider:clk_outs_inst|JK_ff:tff3|q 
+    Info (332119):    -0.610              -0.610 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff10|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff16|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff18|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff23|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff4|q 
+    Info (332119):    -0.521              -0.521 clockdivider:clk_outs_inst|JK_ff:tff8|q 
+    Info (332119):    -0.520              -0.520 clockdivider:clk_outs_inst|JK_ff:tff12|q 
+    Info (332119):    -0.520              -0.520 clockdivider:clk_outs_inst|JK_ff:tff14|q 
+    Info (332119):    -0.520              -0.520 clockdivider:clk_outs_inst|JK_ff:tff21|q 
+    Info (332119):    -0.520              -0.520 clockdivider:clk_outs_inst|JK_ff:tff6|q 
+    Info (332119):    -0.512              -0.512 clockdivider:clk_outs_inst|JK_ff:tff1|q 
+    Info (332119):    -0.263              -0.263 clockdivider:clk_outs_inst|JK_ff:tff25|q 
+    Info (332119):     1.660               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q 
+Info (332146): Worst-case recovery slack is -4.763
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.763              -4.763 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q 
+    Info (332119):    -4.400              -4.400 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q 
+    Info (332119):    -3.922              -3.922 clockdivider:clk_outs_inst|JK_ff:tff27|q 
+    Info (332119):    -2.248              -2.248 clockdivider:clk_outs_inst|JK_ff:tff26|q 
+Info (332146): Worst-case removal slack is 0.382
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.382               0.000 clockdivider:clk_outs_inst|JK_ff:tff26|q 
+    Info (332119):     2.056               0.000 clockdivider:clk_outs_inst|JK_ff:tff27|q 
+    Info (332119):     3.034               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q 
+    Info (332119):     3.397               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q 
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk_ini 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff10|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff11|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff12|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff13|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff14|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff15|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff16|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff17|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff18|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff19|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff1|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff20|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff21|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff22|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff23|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff24|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff25|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff26|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff27|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff2|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff3|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff4|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff5|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff6|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff7|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff8|q 
+    Info (332119):     0.234               0.000 clockdivider:clk_outs_inst|JK_ff:tff9|q 
+    Info (332119):     0.234               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q 
+    Info (332119):     0.234               0.000 contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Wed Nov  6 19:18:25 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
