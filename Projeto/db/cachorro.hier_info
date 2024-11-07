@@ -22,7 +22,6 @@ clk => clk.IN1
 clk_out_26 <= clk_out_26.DB_MAX_OUTPUT_PORT_TYPE
 clk_out_27 <= clk_out_27.DB_MAX_OUTPUT_PORT_TYPE
 clk_out_19 <= clk_out_19.DB_MAX_OUTPUT_PORT_TYPE
-clk_out_15 <= clk_out_15.DB_MAX_OUTPUT_PORT_TYPE
 clk_out_28 <= JK_ff:tff28.q
 
 

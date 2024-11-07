@@ -9,7 +9,7 @@ module sistema (
 	output D1, D2, D3, D4, A, B, C, D, E, F, G, P
 );
 
-	wire clk_15, clk_19, clk_26, clk_27, clk_28, clk_c;
+	wire clk_19, clk_26, clk_27, clk_28, clk_c;
 	
 	and (clk, clk_ini, on_off);
 	
@@ -19,7 +19,6 @@ module sistema (
 
 	clockdivider clk_outs_inst (
 		.clk(clk),
-		.clk_out_15(clk_15),
 		.clk_out_19(clk_19),
 		.clk_out_26(clk_26),
 		.clk_out_27(clk_27),

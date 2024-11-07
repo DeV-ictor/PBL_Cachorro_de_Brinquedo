@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cachorro
-Thu Nov  7 02:25:56 2024
+Thu Nov  7 02:48:11 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -48,9 +48,8 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  40. Port Connectivity Checks: "clockdivider:clk_outs_inst|JK_ff:tff3"
  41. Port Connectivity Checks: "clockdivider:clk_outs_inst|JK_ff:tff2"
  42. Port Connectivity Checks: "clockdivider:clk_outs_inst|JK_ff:tff1"
- 43. Port Connectivity Checks: "clockdivider:clk_outs_inst"
- 44. Analysis & Synthesis Messages
- 45. Analysis & Synthesis Suppressed Messages
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -77,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Nov  7 02:25:56 2024          ;
+; Analysis & Synthesis Status ; Successful - Thu Nov  7 02:48:11 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; cachorro                                       ;
 ; Top-level Entity Name       ; sistema                                        ;
@@ -690,22 +689,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clockdivider:clk_outs_inst"                                                               ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_out_15 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Nov  7 02:25:50 2024
+    Info: Processing started: Thu Nov  7 02:48:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cachorro -c cachorro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -733,14 +723,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file sistema
     Info (12023): Found entity 1: sistema File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 7
 Warning (10236): Verilog HDL Implicit Net warning at contador_3bits.v(19): created implicit net for "rst_act" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/contador_3bits.v Line: 19
 Warning (10236): Verilog HDL Implicit Net warning at sistema.v(14): created implicit net for "clk" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at sistema.v(46): instance has no name File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 46
+Critical Warning (10846): Verilog HDL Instantiation warning at sistema.v(45): instance has no name File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 45
 Info (12127): Elaborating entity "sistema" for the top level hierarchy
-Info (12128): Elaborating entity "clockdivider" for hierarchy "clockdivider:clk_outs_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 27
+Info (12128): Elaborating entity "clockdivider" for hierarchy "clockdivider:clk_outs_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 26
 Info (12128): Elaborating entity "JK_ff" for hierarchy "clockdivider:clk_outs_inst|JK_ff:tff1" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/clockdivider.v Line: 18
-Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:debouncer_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 36
-Info (12128): Elaborating entity "mux4x1_clk_selector" for hierarchy "mux4x1_clk_selector:comb_5" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 46
-Info (12128): Elaborating entity "contador_3bits" for hierarchy "contador_3bits:counter_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 56
-Info (12128): Elaborating entity "display" for hierarchy "display:display_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 78
+Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:debouncer_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 35
+Info (12128): Elaborating entity "mux4x1_clk_selector" for hierarchy "mux4x1_clk_selector:comb_5" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 45
+Info (12128): Elaborating entity "contador_3bits" for hierarchy "contador_3bits:counter_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 55
+Info (12128): Elaborating entity "display" for hierarchy "display:display_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/sistema.v Line: 77
 Info (12128): Elaborating entity "mux_2x1_act_spd" for hierarchy "display:display_inst|mux_2x1_act_spd:mux_act_spd_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/display.v Line: 22
 Info (12128): Elaborating entity "dec_7seg_act" for hierarchy "display:display_inst|mux_2x1_act_spd:mux_act_spd_inst|dec_7seg_act:dis_act_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/mux_2x1_act_spd.v Line: 63
 Info (12128): Elaborating entity "dec_7seg_spd" for hierarchy "display:display_inst|mux_2x1_act_spd:mux_act_spd_inst|dec_7seg_spd:dis_spd_inst" File: C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/mux_2x1_act_spd.v Line: 75
@@ -757,9 +747,9 @@ Info (21057): Implemented 66 device resources after synthesis - the final resour
 Info (144001): Generated suppressed messages file C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/output_files/cachorro.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 4703 megabytes
-    Info: Processing ended: Thu Nov  7 02:25:56 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Thu Nov  7 02:48:11 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+

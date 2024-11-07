@@ -1,6 +1,6 @@
 module clockdivider (
 	input	clk,
-	output clk_out_26, clk_out_27, clk_out_19, clk_out_15, clk_out_28
+	output clk_out_26, clk_out_27, clk_out_19, clk_out_28
 );
 
 	// Fios para recebimento e transferência de pulsos
@@ -123,14 +123,14 @@ module clockdivider (
 	
 	JK_ff tff15 (
 		.clk(clk14),
-		.q(clk_out_15),
+		.q(clk15),
 		.rst_n(1'b0),
 		.j(1'b1),
 		.k(1'b1)		
 	);
 	
 	JK_ff tff16 (
-		.clk(clk_out_15),
+		.clk(clk15),
 		.q(clk16),
 		.rst_n(1'b0),
 		.j(1'b1),
