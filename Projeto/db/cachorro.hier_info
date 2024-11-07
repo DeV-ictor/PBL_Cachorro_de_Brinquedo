@@ -2,19 +2,19 @@
 clk_ini => comb.IN0
 but_deb => deb_B.IN1
 reset_act => reset_act.IN1
-on_off => comb.IN1
-D1 << display:display_inst.digit1_out
-D2 << display:display_inst.digit2_out
-D3 << display:display_inst.digit3_out
-D4 << display:display_inst.digit4_out
-A << display:display_inst.A
-B << display:display_inst.B
-C << display:display_inst.C
-D << display:display_inst.D
-E << display:display_inst.E
-F << display:display_inst.F
-G << display:display_inst.G
-P << display:display_inst.P
+on_off => on_off.IN1
+D1 <= display:display_inst.digit1_out
+D2 <= display:display_inst.digit2_out
+D3 <= display:display_inst.digit3_out
+D4 <= display:display_inst.digit4_out
+A <= display:display_inst.A
+B <= display:display_inst.B
+C <= display:display_inst.C
+D <= display:display_inst.D
+E <= display:display_inst.E
+F <= display:display_inst.F
+G <= display:display_inst.G
+P <= display:display_inst.P
 
 
 |sistema|clockdivider:clk_outs_inst
@@ -361,7 +361,7 @@ B_spd => B_spd.IN1
 A_act => A_act.IN1
 B_act => B_act.IN1
 C_act => C_act.IN1
-onoff => ~NO_FANOUT~
+onoff => onoff.IN1
 A <= mux_2x1_act_spd:mux_act_spd_inst.A
 B <= mux_2x1_act_spd:mux_act_spd_inst.B
 C <= mux_2x1_act_spd:mux_act_spd_inst.C
@@ -455,9 +455,11 @@ S_g <= and_g.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sistema|display:display_inst|mux_2x1_digit:mux_digit_inst
-sel => digit1_out.DATAIN
-sel => digit4_out.DATAIN
-digit1_out <= sel.DB_MAX_OUTPUT_PORT_TYPE
-digit4_out <= sel.DB_MAX_OUTPUT_PORT_TYPE
+sel => and_gate1.IN0
+sel => and_gate0.IN0
+onoff => and_gate0.IN1
+onoff => and_gate1.IN1
+digit1_out <= and_gate0.DB_MAX_OUTPUT_PORT_TYPE
+digit4_out <= and_gate1.DB_MAX_OUTPUT_PORT_TYPE
 
 

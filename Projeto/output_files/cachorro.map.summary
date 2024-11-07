@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Wed Nov  6 19:34:50 2024
+Analysis & Synthesis Status : Successful - Thu Nov  7 02:25:56 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : cachorro
 Top-level Entity Name : sistema
 Family : MAX II
-Total logic elements : 48
+Total logic elements : 50
 Total pins : 16
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

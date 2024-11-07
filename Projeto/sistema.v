@@ -56,6 +56,7 @@ module sistema (
 	);
 	
 	display display_inst (
+		.onoff(on_off),
 		.clk(clk_19),
 		.A_spd(A_deb),
 		.B_spd(B_deb),

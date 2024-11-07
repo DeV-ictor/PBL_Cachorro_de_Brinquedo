@@ -24,6 +24,7 @@ module display (
 	// Instanciação do módulo responsável por alternar o dígito ativo.
 	
 	mux_2x1_digit mux_digit_inst (
+		.onoff(onoff),
 		.sel(clk),
 		.digit1_out(digit1_out),
 		.digit4_out(digit4_out)
