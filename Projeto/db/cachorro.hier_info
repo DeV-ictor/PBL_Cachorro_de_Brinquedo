@@ -3,18 +3,18 @@ clk_ini => comb.IN0
 but_deb => deb_B.IN1
 reset_act => reset_act.IN1
 on_off => on_off.IN1
-D1 <= display:display_inst.digit1_out
-D2 <= display:display_inst.digit2_out
-D3 <= display:display_inst.digit3_out
-D4 <= display:display_inst.digit4_out
-A <= display:display_inst.A
-B <= display:display_inst.B
-C <= display:display_inst.C
-D <= display:display_inst.D
-E <= display:display_inst.E
-F <= display:display_inst.F
-G <= display:display_inst.G
-P <= display:display_inst.P
+D1 << display:display_inst.digit1_out
+D2 << display:display_inst.digit2_out
+D3 << display:display_inst.digit3_out
+D4 << display:display_inst.digit4_out
+A << display:display_inst.A
+B << display:display_inst.B
+C << display:display_inst.C
+D << display:display_inst.D
+E << display:display_inst.E
+F << display:display_inst.F
+G << display:display_inst.G
+P << display:display_inst.P
 
 
 |sistema|clockdivider:clk_outs_inst
