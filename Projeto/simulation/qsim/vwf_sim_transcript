@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off cachorro -c cachorro --vector_source="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/Waveform.vwf" --testbench_file="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off cachorro -c cachorro --vector_source="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/Waveform.vwf" --testbench_file="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,17 +26,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov  6 02:14:46 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off cachorro -c cachorro --vector_source="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/Waveform.vwf" --testbench_file="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/Waveform.vwf.vt"
+    Info: Processing started: Mon Nov 11 19:48:05 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off cachorro -c cachorro --vector_source="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/Waveform.vwf" --testbench_file="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/Waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 Completed successfully. 
 
-**** Generating the timing simulation netlist ****
+**** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/" cachorro -c cachorro
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/" cachorro -c cachorro
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -55,21 +55,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Nov  6 02:14:47 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/" cachorro -c cachorro
+    Info: Processing started: Mon Nov 11 19:48:05 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/" cachorro -c cachorro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204018): Generated files "cachorro.vo" and "cachorro_v.sdo" in directory "C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file cachorro.vo in folder "C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Wed Nov  6 02:14:47 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon Nov 11 19:48:06 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/cachorro.do generated.
+C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/cachorro.do generated.
 
 Completed successfully. 
 
@@ -90,38 +90,38 @@ Reading pref.tcl
 
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 
-# Start time: 02:14:48 on Nov 06,2024
+# Start time: 19:48:07 on Nov 11,2024
 # vlog -work work cachorro.vo 
 
-# -- Compiling module contador_3bits
+# -- Compiling module sistema
 
 # 
+
 # Top level modules:
+# 	sistema
 
-# 	contador_3bits
-
-# End time: 02:14:48 on Nov 06,2024, Elapsed time: 0:00:00
+# End time: 19:48:07 on Nov 11,2024, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 
-# Start time: 02:14:48 on Nov 06,2024
+# Start time: 19:48:07 on Nov 11,2024
 # vlog -work work Waveform.vwf.vt 
 
-# -- Compiling module contador_3bits_vlg_vec_tst
+# -- Compiling module sistema_vlg_vec_tst
 
 # 
 
 # Top level modules:
-# 	contador_3bits_vlg_vec_tst
+# 	sistema_vlg_vec_tst
 
-# End time: 02:14:48 on Nov 06,2024, Elapsed time: 0:00:00
+# End time: 19:48:07 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.contador_3bits_vlg_vec_tst 
-# Start time: 02:14:48 on Nov 06,2024
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 19:48:07 on Nov 11,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2023.3 win64 Jul 17 2023
 # //
@@ -142,10 +142,8 @@ Reading pref.tcl
 # Loading maxii_ver.maxii_asynch_lcell(fast)
 # Loading maxii_ver.maxii_lcell_register(fast)
 # Loading maxii_ver.maxii_asynch_lcell(fast__1)
-# Loading maxii_ver.maxii_asynch_lcell(fast__2)
 # Loading maxii_ver.maxii_lcell_register(fast__1)
 # Loading maxii_ver.maxii_io(fast__1)
-# Loading maxii_ver.maxii_io(fast__2)
 # Loading instances from cachorro_v.sdo
 # Loading timing data from cachorro_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
@@ -153,23 +151,35 @@ Reading pref.tcl
 
 # after#26
 
-# ** Note: $finish    : Waveform.vwf.vt(53)
+# ** Note: $finish    : Waveform.vwf.vt(51)
 #    Time: 1 us  Iteration: 0  Instance: /contador_3bits_vlg_vec_tst
 
-# End time: 02:14:49 on Nov 06,2024, Elapsed time: 0:00:01
+# End time: 19:48:07 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/Waveform.vwf...
+Reading C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/Waveform.vwf...
 
-Reading C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/cachorro.msim.vcd...
+Reading C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/cachorro.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL---Cachorro-de-Brinquedo/Projeto/Projeto-Finalizado/simulation/qsim/cachorro_20241106021449.sim.vwf
+Warning: D1 - signal not found in VCD.
+
+Warning: D2 - signal not found in VCD.
+
+Warning: D3 - signal not found in VCD.
+
+Warning: D4 - signal not found in VCD.
+
+Warning: clk_ini - signal not found in VCD.
+
+Warning: on_off - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/Fredi/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/PBL_2/PBL_Cachorro_de_Brinquedo/Projeto/simulation/qsim/cachorro_20241111194808.sim.vwf
 
 Finished VCD to VWF conversion.
 

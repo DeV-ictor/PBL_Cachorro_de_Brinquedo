@@ -3,38 +3,50 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
-Slack : -1.576
-TNS   : -2.824
+Slack : -1.547
+TNS   : -2.787
 
 Type  : Setup 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
-Slack : -1.473
-TNS   : -1.473
+Slack : -1.474
+TNS   : -1.474
 
 Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
-Slack : -1.237
-TNS   : -1.237
+Slack : -1.213
+TNS   : -1.213
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
 Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
-Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
-Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
-Slack : 0.467
 TNS   : 0.000
 
 Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff25|q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
 Slack : 0.467
 TNS   : 0.000
 
@@ -46,167 +58,159 @@ Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff5|q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
-Slack : 0.467
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
-Slack : 0.468
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
-Slack : 0.468
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
 Slack : 0.469
 TNS   : 0.000
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
 Slack : 0.566
 TNS   : 0.000
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
-Slack : 0.800
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
-Slack : 0.808
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff2|q'
-Slack : 0.809
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
-Slack : 0.825
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
+Slack : 0.587
 TNS   : 0.000
 
 Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff20|q'
-Slack : 0.825
+Slack : 0.800
 TNS   : 0.000
 
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff24|q'
-Slack : 0.825
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
-Slack : 0.836
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
-Slack : 0.880
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
-Slack : 1.185
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
-Slack : 1.213
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
-Slack : 1.280
-TNS   : 0.000
-
-Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
-Slack : 1.385
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
+Slack : 0.808
 TNS   : 0.000
 
 Type  : Setup 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
-Slack : 1.677
+Slack : 0.816
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
+Slack : 0.828
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff2|q'
+Slack : 0.828
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
+Slack : 1.189
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff24|q'
+Slack : 1.255
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
+Slack : 1.280
+TNS   : 0.000
+
+Type  : Setup 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
+Slack : 1.843
 TNS   : 0.000
 
 Type  : Setup 'clk_ini'
-Slack : 3.417
+Slack : 3.524
 TNS   : 0.000
 
 Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
-Slack : -3.804
-TNS   : -6.816
+Slack : -4.316
+TNS   : -6.959
 
 Type  : Hold 'clk_ini'
-Slack : -3.471
-TNS   : -3.471
+Slack : -3.578
+TNS   : -3.578
 
 Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
-Slack : -2.971
-TNS   : -2.971
+Slack : -2.165
+TNS   : -2.165
 
-Type  : Hold 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
-Slack : -1.731
-TNS   : -1.731
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
+Slack : -1.897
+TNS   : -1.897
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
-Slack : -1.439
-TNS   : -1.439
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
 Slack : -1.334
 TNS   : -1.334
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
-Slack : -1.267
-TNS   : -1.267
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
-Slack : -1.239
-TNS   : -1.239
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff19|q'
-Slack : -0.934
-TNS   : -0.934
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
-Slack : -0.890
-TNS   : -0.890
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
-Slack : -0.879
-TNS   : -0.879
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff20|q'
-Slack : -0.879
-TNS   : -0.879
-
 Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff24|q'
-Slack : -0.879
-TNS   : -0.879
+Slack : -1.309
+TNS   : -1.309
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
+Slack : -1.243
+TNS   : -1.243
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff22|q'
+Slack : -0.882
+TNS   : -0.882
 
 Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff2|q'
-Slack : -0.863
-TNS   : -0.863
+Slack : -0.882
+TNS   : -0.882
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
+Slack : -0.879
+TNS   : -0.879
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff17|q'
+Slack : -0.872
+TNS   : -0.872
+
+Type  : Hold 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
+Slack : -0.870
+TNS   : -0.870
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
 Slack : -0.862
 TNS   : -0.862
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff4|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff20|q'
 Slack : -0.854
 TNS   : -0.854
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff15|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff6|q'
+Slack : -0.641
+TNS   : -0.641
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
 Slack : -0.620
 TNS   : -0.620
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff10|q'
 Slack : -0.523
 TNS   : -0.523
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
-Slack : -0.522
-TNS   : -0.522
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
-Slack : -0.522
-TNS   : -0.522
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff13|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff14|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff25|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff16|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff21|q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
 Slack : -0.521
 TNS   : -0.521
 
@@ -218,60 +222,56 @@ Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff5|q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff9|q'
-Slack : -0.521
-TNS   : -0.521
-
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff11|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff12|q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff18|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff1|q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff23|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff25|q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff7|q'
+Type  : Hold 'clockdivider:clk_outs_inst|JK_ff:tff8|q'
 Slack : -0.520
 TNS   : -0.520
 
 Type  : Hold 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
-Slack : 1.919
+Slack : 1.920
 TNS   : 0.000
 
 Type  : Recovery 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
-Slack : -5.116
-TNS   : -5.116
+Slack : -5.133
+TNS   : -5.133
 
 Type  : Recovery 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
-Slack : -3.893
-TNS   : -3.893
+Slack : -4.769
+TNS   : -4.769
 
 Type  : Recovery 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
-Slack : -3.506
-TNS   : -3.506
+Slack : -4.491
+TNS   : -4.491
 
 Type  : Recovery 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
-Slack : -2.673
-TNS   : -2.673
+Slack : -2.340
+TNS   : -2.340
 
 Type  : Removal 'clockdivider:clk_outs_inst|JK_ff:tff26|q'
-Slack : 0.102
-TNS   : 0.000
+Slack : -0.238
+TNS   : -0.238
 
 Type  : Removal 'clockdivider:clk_outs_inst|JK_ff:tff27|q'
-Slack : 0.935
+Slack : 1.913
 TNS   : 0.000
 
 Type  : Removal 'contador_3bits:counter_inst|JK_ff:jk_inst_Q0|q'
-Slack : 1.822
+Slack : 2.691
 TNS   : 0.000
 
 Type  : Removal 'contador_3bits:counter_inst|JK_ff:jk_inst_Q1|q'
-Slack : 3.045
+Slack : 3.055
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clk_ini'

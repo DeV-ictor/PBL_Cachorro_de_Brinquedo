@@ -2,26 +2,32 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 02:14:48 on Nov 06,2024
+# Start time: 19:54:34 on Nov 11,2024
 # vlog -work work cachorro.vo 
-# -- Compiling module contador_3bits
+# -- Compiling module sistema
 # 
 # Top level modules:
-# 	contador_3bits
-# End time: 02:14:48 on Nov 06,2024, Elapsed time: 0:00:00
+# 	sistema
+# End time: 19:54:34 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 02:14:48 on Nov 06,2024
+# Start time: 19:54:34 on Nov 11,2024
 # vlog -work work Waveform.vwf.vt 
-# -- Compiling module contador_3bits_vlg_vec_tst
+# -- Compiling module sistema_vlg_vec_tst
 # 
 # Top level modules:
-# 	contador_3bits_vlg_vec_tst
-# End time: 02:14:48 on Nov 06,2024, Elapsed time: 0:00:00
+# 	sistema_vlg_vec_tst
+# End time: 19:54:34 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.contador_3bits_vlg_vec_tst 
-# Start time: 02:14:48 on Nov 06,2024
+# Start time: 19:54:34 on Nov 11,2024
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-1946) cachorro_v.sdo(304): Can't resolve SDF pathname "lecomb" - instance not found.
+# ** Warning: (vopt-1946) cachorro_v.sdo(314): Can't resolve SDF pathname "lereg" - instance not found.
+# ** Warning: (vopt-1946) cachorro_v.sdo(330): Can't resolve SDF pathname "lecomb" - instance not found.
+# ** Warning: (vopt-1946) cachorro_v.sdo(340): Can't resolve SDF pathname "lereg" - instance not found.
+# ** Warning: (vopt-1946) cachorro_v.sdo(356): Can't resolve SDF pathname "lecomb" - instance not found.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2023.3 win64 Jul 17 2023
 # //
@@ -37,20 +43,159 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading work.contador_3bits_vlg_vec_tst(fast)
-# Loading maxii_ver.maxii_io(fast)
-# Loading maxii_ver.maxii_asynch_lcell(fast)
-# Loading maxii_ver.maxii_lcell_register(fast)
-# Loading maxii_ver.maxii_asynch_lcell(fast__1)
-# Loading maxii_ver.maxii_asynch_lcell(fast__2)
-# Loading maxii_ver.maxii_lcell_register(fast__1)
-# Loading maxii_ver.maxii_io(fast__1)
-# Loading maxii_ver.maxii_io(fast__2)
 # Loading instances from cachorro_v.sdo
-# Loading timing data from cachorro_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1222): Failed to find INSTANCE '\A~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1232): Failed to find INSTANCE '\B~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1242): Failed to find INSTANCE '\C~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1184): Failed to find INSTANCE '\D1~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1194): Failed to find INSTANCE '\D2~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1203): Failed to find INSTANCE '\D3~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1212): Failed to find INSTANCE '\D4~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1252): Failed to find INSTANCE '\D~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1262): Failed to find INSTANCE '\E~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1272): Failed to find INSTANCE '\F~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1282): Failed to find INSTANCE '\G~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1292): Failed to find INSTANCE '\P~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(770): Failed to find INSTANCE '\but_deb~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(49): Failed to find INSTANCE '\clk_ini~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(304): Failed to find INSTANCE '\clk_outs_inst|tff10|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(304): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(314): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(330): Failed to find INSTANCE '\clk_outs_inst|tff11|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(330): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(340): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(356): Failed to find INSTANCE '\clk_outs_inst|tff12|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(356): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(366): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(382): Failed to find INSTANCE '\clk_outs_inst|tff13|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(382): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(392): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(408): Failed to find INSTANCE '\clk_outs_inst|tff14|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(408): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(418): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(434): Failed to find INSTANCE '\clk_outs_inst|tff15|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(434): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(444): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(460): Failed to find INSTANCE '\clk_outs_inst|tff16|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(460): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(470): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(486): Failed to find INSTANCE '\clk_outs_inst|tff17|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(486): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(496): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(512): Failed to find INSTANCE '\clk_outs_inst|tff18|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(512): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(522): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(538): Failed to find INSTANCE '\clk_outs_inst|tff19|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(538): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(548): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(70): Failed to find INSTANCE '\clk_outs_inst|tff1|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(70): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(80): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(588): Failed to find INSTANCE '\clk_outs_inst|tff20|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(588): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(598): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(614): Failed to find INSTANCE '\clk_outs_inst|tff21|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(614): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(624): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(640): Failed to find INSTANCE '\clk_outs_inst|tff22|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(640): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(650): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(666): Failed to find INSTANCE '\clk_outs_inst|tff23|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(666): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(676): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(692): Failed to find INSTANCE '\clk_outs_inst|tff24|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(692): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(702): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(718): Failed to find INSTANCE '\clk_outs_inst|tff25|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(718): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(728): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(744): Failed to find INSTANCE '\clk_outs_inst|tff26|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(744): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(754): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(837): Failed to find INSTANCE '\clk_outs_inst|tff27|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(837): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(847): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(863): Failed to find INSTANCE '\clk_outs_inst|tff28|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(863): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(873): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(96): Failed to find INSTANCE '\clk_outs_inst|tff2|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(96): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(106): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(122): Failed to find INSTANCE '\clk_outs_inst|tff3|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(122): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(132): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(148): Failed to find INSTANCE '\clk_outs_inst|tff4|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(148): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(158): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(174): Failed to find INSTANCE '\clk_outs_inst|tff5|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(174): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(184): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(200): Failed to find INSTANCE '\clk_outs_inst|tff6|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(200): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(210): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(226): Failed to find INSTANCE '\clk_outs_inst|tff7|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(226): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(236): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(252): Failed to find INSTANCE '\clk_outs_inst|tff8|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(252): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(262): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(278): Failed to find INSTANCE '\clk_outs_inst|tff9|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(278): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(288): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(903): Failed to find INSTANCE '\comb_5|or_gate '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(903): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(889): Failed to find INSTANCE '\comb_5|or_gate~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(889): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(968): Failed to find INSTANCE '\counter_inst|jk_inst_Q0|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(968): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(978): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(994): Failed to find INSTANCE '\counter_inst|jk_inst_Q1|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(994): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1004): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(928): Failed to find INSTANCE '\counter_inst|jk_inst_Q2|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(928): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(938): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(954): Failed to find INSTANCE '\counter_inst|or_rst '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(954): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(779): Failed to find INSTANCE '\debouncer_inst|T_inst_1|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(779): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(791): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(807): Failed to find INSTANCE '\debouncer_inst|T_inst_2|q '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(807): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(821): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1048): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|and_gate1~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1048): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1080): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate0~4 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1080): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1032): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate0~5 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1032): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1064): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate2~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1064): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1094): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate3~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1094): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1110): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate4~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1110): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1124): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate4~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1124): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1140): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate5~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1140): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1152): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate5~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1152): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1020): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate6~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1020): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1168): Failed to find INSTANCE '\display_inst|mux_act_spd_inst|or_gate6~1 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(1168): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(564): Failed to find INSTANCE '\display_inst|mux_digit_inst|and_gate0 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(564): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(576): Failed to find INSTANCE '\display_inst|mux_digit_inst|and_gate1 '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(576): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(40): Failed to find INSTANCE '\on_off~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(919): Failed to find INSTANCE '\reset_act~I '.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(58): Failed to find INSTANCE 'clk'.
+# ** Error (suppressible): (vsim-SDF-3250) cachorro_v.sdo(58): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Error: (vsim-SDF-3445) Failed to parse SDF file "cachorro_v.sdo".
 #    Time: 0 ps  Iteration: 0  Instance: /contador_3bits_vlg_vec_tst File: Waveform.vwf.vt
-# after#26
-# ** Note: $finish    : Waveform.vwf.vt(53)
-#    Time: 1 us  Iteration: 0  Instance: /contador_3bits_vlg_vec_tst
-# End time: 02:14:49 on Nov 06,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# Error loading design
+# End time: 19:54:35 on Nov 11,2024, Elapsed time: 0:00:01
+# Errors: 151, Warnings: 5
